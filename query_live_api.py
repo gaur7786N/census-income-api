@@ -17,8 +17,8 @@ from typing import Any, Dict, Optional, Sequence
 
 import requests
 
-# TODO: replace with the root URL of the deployed service (no trailing path).
-LIVE_API_URL = "https://YOUR-APP-NAME.onrender.com"
+# Root URL of the deployed service on Render.
+LIVE_API_URL = "https://census-income-api-id4v.onrender.com"
 
 PREDICT_PATH = "/predict"
 
