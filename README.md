@@ -7,11 +7,9 @@ tests, continuous integration and continuous deployment.
 | | |
 |---|---|
 | **Repository platform** | GitHub (CI and CD with GitHub Actions, hosting on Render) |
-| **Repository URL** | TODO: https://github.com/YOUR-GITHUB-USERNAME/YOUR-REPOSITORY-NAME |
-| **Live API URL** | TODO: https://YOUR-APP-NAME.onrender.com |
+| **Repository URL** | https://github.com/gaur7786N/census-income-api |
+| **Live API URL** | https://census-income-api-id4v.onrender.com |
 | **Python** | 3.13 (development, CI and Render all use 3.13) |
-
-> Replace the two TODO values above before submitting.
 
 ## Project layout
 
