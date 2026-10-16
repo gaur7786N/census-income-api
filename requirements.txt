@@ -1,0 +1,22 @@
+# Python 3.13. Versions are pinned because the saved scikit-learn model and
+# encoder must be loaded with the same scikit-learn/numpy they were trained
+# with.
+
+# API
+fastapi==0.117.1
+uvicorn[standard]==0.36.0
+pydantic==2.11.9
+
+# Data and model
+pandas==2.3.2
+numpy==2.3.3
+scikit-learn==1.7.2
+joblib==1.6.0
+
+# Client script for the live API and the API tests
+requests==2.32.5
+httpx==0.28.1
+
+# Tests and linting (run in CI)
+pytest==8.4.2
+flake8==7.4.1

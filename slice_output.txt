@@ -1,0 +1,126 @@
+Model performance on slices of the held-out test set
+Test rows: 6513 | training rows: 26048
+Overall | precision=0.7847 | recall=0.6135 | fbeta=0.6886
+Slices: the value of one categorical feature is held fixed.
+positives = rows whose true label is >50K.
+Caution: metrics use zero_division=1. If a slice has no predicted
+(or no actual) >50K rows, precision (or recall) is reported as 1.0
+by convention rather than measured. Check n and positives first.
+
+Feature: workclass
+workclass = ? | n=363 | positives=36 | precision=0.6923 | recall=0.5000 | fbeta=0.5806
+workclass = Federal-gov | n=195 | positives=76 | precision=0.7097 | recall=0.5789 | fbeta=0.6377
+workclass = Local-gov | n=389 | positives=120 | precision=0.7523 | recall=0.6833 | fbeta=0.7162
+workclass = Never-worked | n=1 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+workclass = Private | n=4597 | positives=1009 | precision=0.7986 | recall=0.5778 | fbeta=0.6705
+workclass = Self-emp-inc | n=222 | positives=118 | precision=0.7619 | recall=0.8136 | fbeta=0.7869
+workclass = Self-emp-not-inc | n=500 | positives=143 | precision=0.8393 | recall=0.6573 | fbeta=0.7373
+workclass = State-gov | n=245 | positives=66 | precision=0.7377 | recall=0.6818 | fbeta=0.7087
+workclass = Without-pay | n=1 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+
+Feature: education
+education = 10th | n=204 | positives=15 | precision=1.0000 | recall=0.1333 | fbeta=0.2353
+education = 11th | n=244 | positives=11 | precision=1.0000 | recall=0.3636 | fbeta=0.5333
+education = 12th | n=79 | positives=4 | precision=1.0000 | recall=0.2500 | fbeta=0.4000
+education = 1st-4th | n=28 | positives=2 | precision=1.0000 | recall=0.5000 | fbeta=0.6667
+education = 5th-6th | n=51 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+education = 7th-8th | n=120 | positives=5 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+education = 9th | n=106 | positives=7 | precision=1.0000 | recall=0.1429 | fbeta=0.2500
+education = Assoc-acdm | n=191 | positives=55 | precision=0.9143 | recall=0.5818 | fbeta=0.7111
+education = Assoc-voc | n=274 | positives=85 | precision=0.8478 | recall=0.4588 | fbeta=0.5954
+education = Bachelors | n=1096 | positives=437 | precision=0.7381 | recall=0.8513 | fbeta=0.7906
+education = Doctorate | n=84 | positives=63 | precision=0.8983 | recall=0.8413 | fbeta=0.8689
+education = HS-grad | n=2120 | positives=339 | precision=0.8087 | recall=0.2743 | fbeta=0.4097
+education = Masters | n=318 | positives=182 | precision=0.8454 | recall=0.9011 | fbeta=0.8723
+education = Preschool | n=9 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+education = Prof-school | n=114 | positives=83 | precision=0.7979 | recall=0.9036 | fbeta=0.8475
+education = Some-college | n=1475 | positives=280 | precision=0.7353 | recall=0.4464 | fbeta=0.5556
+
+Feature: marital-status
+marital-status = Divorced | n=883 | positives=103 | precision=0.9630 | recall=0.2524 | fbeta=0.4000
+marital-status = Married-AF-spouse | n=5 | positives=3 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+marital-status = Married-civ-spouse | n=2977 | positives=1341 | precision=0.7751 | recall=0.6734 | fbeta=0.7207
+marital-status = Married-spouse-absent | n=86 | positives=5 | precision=1.0000 | recall=0.2000 | fbeta=0.3333
+marital-status = Never-married | n=2181 | positives=89 | precision=0.9583 | recall=0.2584 | fbeta=0.4071
+marital-status = Separated | n=199 | positives=16 | precision=1.0000 | recall=0.3125 | fbeta=0.4762
+marital-status = Widowed | n=182 | positives=11 | precision=1.0000 | recall=0.3636 | fbeta=0.5333
+
+Feature: occupation
+occupation = ? | n=364 | positives=36 | precision=0.6923 | recall=0.5000 | fbeta=0.5806
+occupation = Adm-clerical | n=819 | positives=123 | precision=0.6944 | recall=0.4065 | fbeta=0.5128
+occupation = Armed-Forces | n=3 | positives=1 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+occupation = Craft-repair | n=800 | positives=184 | precision=0.7308 | recall=0.3098 | fbeta=0.4351
+occupation = Exec-managerial | n=808 | positives=391 | precision=0.8082 | recall=0.8082 | fbeta=0.8082
+occupation = Farming-fishing | n=203 | positives=21 | precision=0.8571 | recall=0.2857 | fbeta=0.4286
+occupation = Handlers-cleaners | n=252 | positives=12 | precision=0.6667 | recall=0.3333 | fbeta=0.4444
+occupation = Machine-op-inspct | n=392 | positives=52 | precision=0.9333 | recall=0.2692 | fbeta=0.4179
+occupation = Other-service | n=684 | positives=24 | precision=1.0000 | recall=0.1667 | fbeta=0.2857
+occupation = Priv-house-serv | n=20 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+occupation = Prof-specialty | n=818 | positives=360 | precision=0.7912 | recall=0.8528 | fbeta=0.8209
+occupation = Protective-serv | n=121 | positives=42 | precision=0.7931 | recall=0.5476 | fbeta=0.6479
+occupation = Sales | n=718 | positives=204 | precision=0.7800 | recall=0.5735 | fbeta=0.6610
+occupation = Tech-support | n=189 | positives=57 | precision=0.7674 | recall=0.5789 | fbeta=0.6600
+occupation = Transport-moving | n=322 | positives=61 | precision=0.7500 | recall=0.1967 | fbeta=0.3117
+
+Feature: relationship
+relationship = Husband | n=2607 | positives=1176 | precision=0.7668 | recall=0.6709 | fbeta=0.7156
+relationship = Not-in-family | n=1636 | positives=165 | precision=0.9583 | recall=0.2788 | fbeta=0.4319
+relationship = Other-relative | n=190 | positives=9 | precision=0.6667 | recall=0.2222 | fbeta=0.3333
+relationship = Own-child | n=1032 | positives=15 | precision=0.5000 | recall=0.0667 | fbeta=0.1176
+relationship = Unmarried | n=712 | positives=43 | precision=1.0000 | recall=0.2558 | fbeta=0.4074
+relationship = Wife | n=336 | positives=160 | precision=0.8496 | recall=0.7063 | fbeta=0.7713
+
+Feature: race
+race = Amer-Indian-Eskimo | n=73 | positives=9 | precision=0.7500 | recall=0.3333 | fbeta=0.4615
+race = Asian-Pac-Islander | n=200 | positives=52 | precision=0.6531 | recall=0.6154 | fbeta=0.6337
+race = Black | n=662 | positives=93 | precision=0.8305 | recall=0.5269 | fbeta=0.6447
+race = Other | n=45 | positives=4 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+race = White | n=5533 | positives=1410 | precision=0.7874 | recall=0.6199 | fbeta=0.6937
+
+Feature: sex
+sex = Female | n=2158 | positives=245 | precision=0.8693 | recall=0.5429 | fbeta=0.6683
+sex = Male | n=4355 | positives=1323 | precision=0.7726 | recall=0.6266 | fbeta=0.6920
+
+Feature: native-country
+native-country = ? | n=125 | positives=32 | precision=0.7105 | recall=0.8438 | fbeta=0.7714
+native-country = Cambodia | n=3 | positives=1 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+native-country = Canada | n=28 | positives=5 | precision=0.2500 | recall=0.2000 | fbeta=0.2222
+native-country = China | n=14 | positives=4 | precision=0.7500 | recall=0.7500 | fbeta=0.7500
+native-country = Columbia | n=11 | positives=0 | precision=0.0000 | recall=1.0000 | fbeta=0.0000
+native-country = Cuba | n=12 | positives=4 | precision=1.0000 | recall=0.5000 | fbeta=0.6667
+native-country = Dominican-Republic | n=12 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Ecuador | n=3 | positives=1 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+native-country = El-Salvador | n=21 | positives=3 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = England | n=22 | positives=7 | precision=0.7500 | recall=0.4286 | fbeta=0.5455
+native-country = France | n=2 | positives=0 | precision=0.0000 | recall=1.0000 | fbeta=0.0000
+native-country = Germany | n=28 | positives=7 | precision=0.8000 | recall=0.5714 | fbeta=0.6667
+native-country = Greece | n=4 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Guatemala | n=21 | positives=2 | precision=1.0000 | recall=0.5000 | fbeta=0.6667
+native-country = Haiti | n=8 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Holand-Netherlands | n=0 | no test samples, metrics undefined
+native-country = Honduras | n=3 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Hong | n=3 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Hungary | n=2 | positives=1 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+native-country = India | n=18 | positives=7 | precision=0.7000 | recall=1.0000 | fbeta=0.8235
+native-country = Iran | n=12 | positives=3 | precision=0.2500 | recall=0.3333 | fbeta=0.2857
+native-country = Ireland | n=2 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Italy | n=13 | positives=8 | precision=1.0000 | recall=0.6250 | fbeta=0.7692
+native-country = Jamaica | n=21 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Japan | n=16 | positives=7 | precision=0.8000 | recall=0.5714 | fbeta=0.6667
+native-country = Laos | n=2 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Mexico | n=111 | positives=3 | precision=1.0000 | recall=0.3333 | fbeta=0.5000
+native-country = Nicaragua | n=11 | positives=1 | precision=0.0000 | recall=0.0000 | fbeta=0.0000
+native-country = Outlying-US(Guam-USVI-etc) | n=4 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Peru | n=7 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Philippines | n=41 | positives=12 | precision=0.6667 | recall=0.6667 | fbeta=0.6667
+native-country = Poland | n=12 | positives=1 | precision=0.5000 | recall=1.0000 | fbeta=0.6667
+native-country = Portugal | n=7 | positives=1 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+native-country = Puerto-Rico | n=22 | positives=4 | precision=0.8000 | recall=1.0000 | fbeta=0.8889
+native-country = Scotland | n=4 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = South | n=12 | positives=6 | precision=1.0000 | recall=0.3333 | fbeta=0.5000
+native-country = Taiwan | n=7 | positives=3 | precision=0.7500 | recall=1.0000 | fbeta=0.8571
+native-country = Thailand | n=7 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = Trinadad&Tobago | n=4 | positives=0 | precision=1.0000 | recall=1.0000 | fbeta=1.0000
+native-country = United-States | n=5835 | positives=1442 | precision=0.7930 | recall=0.6110 | fbeta=0.6902
+native-country = Vietnam | n=15 | positives=1 | precision=1.0000 | recall=0.0000 | fbeta=0.0000
+native-country = Yugoslavia | n=8 | positives=2 | precision=1.0000 | recall=0.5000 | fbeta=0.6667
